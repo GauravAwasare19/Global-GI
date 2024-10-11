@@ -1,0 +1,84 @@
+.terms-container {
+  max-width: 90%;
+  margin: 20px auto; /* Add more space on the top and bottom */
+  padding: 20px; /* Add more padding for better spacing */
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  border: 1px solid #ddd; /* Light border for definition */
+  font-family: Arial, sans-serif;
+  line-height: 1.7; /* Slightly increase line height for readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.terms-container h1 {
+  font-size: 2rem; /* Increase font size for the heading */
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase; /* Add uppercase for emphasis */
+  letter-spacing: 1.5px; /* Space out letters slightly */
+}
+
+.terms-container p {
+  font-size: 1rem; /* Adjust font size for better readability */
+  margin-bottom: 15px; /* Increase space between paragraphs */
+  color: #555;
+}
+
+.terms-container p strong {
+  color: #000;
+}
+
+.terms-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; /* Add space around the logo */
+}
+
+.terms-logo img {
+  max-width: 300px; /* Reduce logo size for balance */
+  height: auto;
+  border-radius: 4px; /* Optional: Add slight rounding to the logo edges */
+}
+
+.terms-column {
+  margin-bottom: 20px; /* Space out the columns */
+}
+
+.terms-column:not(:last-child) {
+  border-bottom: 1px solid #ddd; /* Add light border between sections */
+  padding-bottom: 20px;
+}
+
+.terms-agreement {
+  font-weight: bold;
+  margin-top: 25px;
+  text-align: center;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.terms-container a {
+  color: #007bff; /* Add a distinct color for links */
+  text-decoration: none;
+}
+
+.terms-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 15px;
+  }
+
+  .terms-logo img {
+    max-width: 250px;
+  }
+
+  .terms-container h1 {
+    font-size: 1.5rem;
+  }
+}

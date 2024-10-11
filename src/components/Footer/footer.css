@@ -1,0 +1,65 @@
+.footer {
+    width: 100%;
+    background-color: #fecc09; /* Yellow background */
+    padding: 15px 0; /* Reduced padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #bc170e; /* Red top border */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    margin-top: auto;
+  }
+  
+  .fLists {
+    display: flex;
+    justify-content: space-between; /* Distribute lists evenly */
+    width: 100%;
+    max-width: 900px; /* Limit max width to make it more compact */
+    padding: 10px 20px; /* Padding for spacing */
+  }
+  
+  .fList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0; /* Remove margin */
+  }
+  
+  .fListItem {
+    margin: 5px 0; /* Reduce spacing between items */
+    font-size: 14px; /* Adjust font size */
+    color: #bc170e; /* Red for text */
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .fListItem a {
+    text-decoration: none;
+    color: inherit; /* Inherit color for links */
+  }
+  
+  .fListItem:hover {
+    color: #fcfef9; /* Cream hover effect */
+  }
+  
+  .fText {
+    color: #bc170e;
+    font-weight: 600; /* Slightly bold */
+    font-size: 12px; /* Smaller text size */
+    text-align: center;
+    margin-top: 10px; /* Margin for spacing */
+  }
+  
+  @media (max-width: 768px) {
+    .fLists {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0; /* Adjust padding */
+    }
+  
+    .fList {
+      margin-bottom: 15px; /* Adjust margin for each list */
+    }
+  }
+  

@@ -1,0 +1,65 @@
+.international-container {
+  max-width: 1000px; /* Increase the maximum width */
+  margin: 0 auto; 
+  padding: 20px; /* Add some padding */
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #bc170e;
+  text-align: center;
+  margin-bottom: 20px; /* Add a bit more margin for the title */
+}
+
+.dropdown {
+  margin-bottom: 15px;
+}
+
+.dropdown-button {
+  background-color: #fecc09; 
+  color: #000; 
+  padding: 10px; /* Slightly increase padding for better spacing */
+  margin: 10px 0; /* Adjust margin for better spacing between buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; 
+  text-align: left;
+  font-size: 18px; /* Increase font size slightly for better readability */
+  transition: background-color 0.3s;
+}
+
+.dropdown-button:hover {
+  background-color: #bc170e; 
+  color: #fff;
+}
+
+.dropdown-content {
+  border: 1px solid #bc170e;
+  padding: 15px; /* Increase padding inside the dropdown content */
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content p, .dropdown-content ul {
+  margin: 10px 0; /* Increase margin between content */
+  line-height: 1.5; /* Improve readability with better line spacing */
+}
+
+ul {
+  padding-left: 25px; /* Keep padding for list items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .international-container {
+    max-width: 90%; /* Make the container take more space on smaller screens */
+    padding: 15px;
+  }
+
+  .dropdown-button {
+    font-size: 16px; /* Adjust button font size for smaller screens */
+  }
+}

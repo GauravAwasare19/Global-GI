@@ -1,0 +1,66 @@
+.about-container {
+  max-width: 900px; /* Adjusted to slightly reduce width */
+  margin: 10px auto; /* Keeps a small space on the sides */
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.8; 
+  color: #4b4b4b; 
+  background-color: #f9f9f9; /* Subtle background for a professional look */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+h1 {
+  color: #bc170e;
+  border-bottom: 3px solid #fecc09; /* More prominent underline */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 2em; /* Increased size for better hierarchy */
+}
+
+h2 {
+  color: #003580;
+  margin-top: 30px; /* Increased margin for better section separation */
+  font-size: 1.5em; /* Slightly larger for clearer section distinction */
+}
+
+p {
+  margin-bottom: 20px; /* Consistent spacing between paragraphs */
+  font-size: 1.1em; /* Slightly increased font size for better readability */
+}
+
+ul.two-column-list {
+  column-count: 2; /* Split the list into 2 columns */
+  column-gap: 20px; /* Gap between the columns */
+  list-style-position: inside; /* Align the bullet points inside the column */
+  padding-left: 0; /* Remove extra padding */
+  margin-top: 10px;
+}
+
+ul.two-column-list li {
+  margin-bottom: 10px; /* Consistent spacing between list items */
+  font-size: 1.1em; /* Slightly increased font size */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 15px 20px; /* Reduced padding on smaller screens */
+  }
+
+  h1 {
+    font-size: 1.8em; /* Adjust heading size for smaller devices */
+  }
+
+  h2 {
+    font-size: 1.3em; /* Adjust heading size for smaller devices */
+  }
+
+  p {
+    font-size: 1em; /* Keep text readable on smaller screens */
+  }
+
+  ul.two-column-list {
+    column-count: 1; /* Display a single column on smaller screens */
+  }
+}

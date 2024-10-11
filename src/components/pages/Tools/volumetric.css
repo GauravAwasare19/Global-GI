@@ -1,0 +1,57 @@
+.conversion-container {
+    max-width: 1200px; 
+    padding: 10px;
+    margin: 10 auto;
+    font-family: Arial, sans-serif;
+    color: #4b4b4b;
+}
+
+.volumetric-weight-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Add more space between sections */
+    align-items: flex-start;
+}
+
+.volumetric-section {
+    flex: 1;
+    margin: 0 15px; /* Add spacing on left and right */
+}
+
+.volumetric-image {
+    width: 100%; /* Reduce image size for a cleaner layout */
+    max-width: 400px; /* Restrict maximum size for better visual balance */
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    padding: 10px; /* Increase padding around images */
+    border-radius: 8px; /* Slightly round the edges */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the images */
+}
+
+h3 {
+    color: #bc170e;
+    border-bottom: 2px solid #fecc09;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 1.5em; /* Adjust heading size for better readability */
+}
+
+p {
+    margin-bottom: 30px;
+    line-height: 1.6; /* Improve text readability */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .volumetric-weight-section {
+        flex-direction: column;
+        gap: 20px; /* Add some gap when stacked vertically */
+    }
+
+    .volumetric-section {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,101 @@
+.navbar {
+    height: max-content;
+    background-color: #fecc09; /* Yellow for the background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: #bc170e; /* Red for text color */
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    max-width: 1024px;
+    justify-content: space-between; /* Logo on the left, list on the right */
+    width: 100%;
+    padding: 0 20px; /* Add padding to create space at the start and end */
+}
+
+.logo {
+    height: 45px; /* Set logo height */
+}
+
+.navItems {
+    display: flex;
+    justify-content: flex-end; /* Align the items to the right */
+    width: fit-content;
+}
+
+.navItems ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navItems ul li {
+    margin: 0 25px; /* Increase margin for more space between items */
+    font-weight: 500;
+    font-size: 1rem;
+    color: #bc170e; /* Red for list item text */
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+}
+
+.navItems ul li:hover {
+    background-color: #fcfef9; /* Light Cream on hover */
+    color: #bc170e; /* Keep text color red on hover */
+}
+
+.dropdown {
+    position: absolute;                                     /* Positioning the dropdown */
+    background-color: white; 
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;                                              /* Ensure dropdown is above other elements */
+    padding: 10px 0; 
+    color: #fecc09;
+}
+
+.dropdown a {
+    display: block;                                            /* Each link takes up a full line */
+    padding: 10px 15px; 
+    color: #bc170e; 
+    transition: background-color 0.3s ease; 
+}
+
+.dropdown a:hover {
+    background-color: white; 
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navContainer {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0; /* Remove padding on mobile for full-width navbar */
+    }
+
+    .navItems ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navItems ul li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .navItems ul li {
+        font-size: 0.9rem;
+    }
+}
